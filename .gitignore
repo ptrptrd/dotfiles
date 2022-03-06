@@ -1,0 +1,18 @@
+#Ignore almost all
+Code
+Code - OSS
+dconf
+evolution
+gnome-initial-setup-done
+gnome-session
+goa-1.0
+ibus
+nautilus
+pulse
+update-notifier
+user-dirs.dirs
+user-dirs.locale
+home
+coc
+dejavu-fonts-ttf-2.37
+nvim/plugged/*
