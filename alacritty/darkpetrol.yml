@@ -1,0 +1,29 @@
+#######################################
+## Dark Petrol 
+#######################################
+colors:
+  primary:
+    background: '#18211f'
+    foreground: '#C4C8C6'
+  cursor:
+    cursor: '#C4C8C6'
+  selection:
+    background: '#28785E'
+  normal:
+    black:   '#1B3E3B'
+    red:     '#A54241'
+    green:   '#28785E'
+    yellow:  '#EB982E'
+    blue:    '#4F819D'
+    magenta: '#85677F'
+    cyan:    '#4E8D87'
+    white:   '#C4C8C6'
+  bright:
+    black:   '#535F6B'
+    red:     '#CC6665'
+    green:   '#46C6B5'
+    yellow:  '#D29655'
+    blue:    '#4F819D'
+    magenta: '#85677F'
+    cyan:    '#7ABEB7'
+    white:   '#CFE2E0'
