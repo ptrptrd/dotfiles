@@ -1,0 +1,115 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+window:
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 6
+    y: 6
+
+  # Spread additional padding evenly around the terminal content.
+  dynamic_padding: false
+
+  # Background opacity
+  #
+  # Window opacity as a floating point number from `0.0` to `1.0`.
+  # The value `0.0` is completely transparent and `1.0` is opaque.
+  opacity: 1.0
+
+  # Window title
+  title: Alacritty
+
+  # Window class (Linux/BSD only):
+  class:
+    # Application instance name
+    instance: Alacritty
+    # General application class
+    general: Alacritty
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 5000
+
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    # Font family
+    family: DejaVu Sans Mono
+
+    # The `style` can be specified to pick a specific face.
+    style: Regular
+
+  # Bold font face
+  bold:
+    # Font family
+    family: DejaVu Sans Mono
+
+    # The `style` can be specified to pick a specific face.
+    style: Bold
+
+  # Italic font face
+  italic:
+    # Font family
+    family: DejaVu Sans Mono
+
+    # The `style` can be specified to pick a specific face.
+    style: Italic
+
+  # Bold italic font face
+  bold_italic:
+  # Font family
+    family: DejaVu Sans Mono
+
+    # The `style` can be specified to pick a specific face.
+    style: Bold Italic
+
+  # Point size
+  size: 11.0
+
+  # Offset is the extra space around each character. `offset.y` can be thought of
+  # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
+  offset:
+    x: 0
+    y: 1
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+#######################################
+##      START OF COLOR SCHEMES       ##
+#######################################
+schemes:
+  DarkPetrol: &DarkPetrol
+    primary:
+      background: '#18211f'
+      foreground: '#C5C8C6'
+    cursor:
+      text: CellBackground
+      cursor: '#C5C8C6'
+    selection:
+      text: CellForeground
+      background: '#28786E'
+    normal:
+      black:   '#2B3E3B'
+      red:     '#A54242'
+      green:   '#28786E'
+      yellow:  '#EB983E'
+      blue:    '#5F819D'
+      magenta: '#85678F'
+      cyan:    '#5E8D87'
+      white:   '#C5C8C6'
+    bright:
+      black:   '#536F6B'
+      red:     '#CC6666'
+      green:   '#47C6B5'
+      yellow:  '#D29656'
+      blue:    '#5F819D'   # This is 2257a0 in Doom Emacs but I lightened it.
+      magenta: '#85678F'
+      cyan:    '#8ABEB7'
+      white:   '#CFE3E0'
+
+colors: *DarkPetrol
