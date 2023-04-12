@@ -79,37 +79,7 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-#######################################
-##      START OF COLOR SCHEMES       ##
-#######################################
-schemes:
-  DarkPetrol: &DarkPetrol
-    primary:
-      background: '#18211f'
-      foreground: '#C5C8C6'
-    cursor:
-      text: CellBackground
-      cursor: '#C5C8C6'
-    selection:
-      text: CellForeground
-      background: '#28786E'
-    normal:
-      black:   '#2B3E3B'
-      red:     '#A54242'
-      green:   '#28786E'
-      yellow:  '#EB983E'
-      blue:    '#5F819D'
-      magenta: '#85678F'
-      cyan:    '#5E8D87'
-      white:   '#C5C8C6'
-    bright:
-      black:   '#536F6B'
-      red:     '#CC6666'
-      green:   '#47C6B5'
-      yellow:  '#D29656'
-      blue:    '#5F819D'   # This is 2257a0 in Doom Emacs but I lightened it.
-      magenta: '#85678F'
-      cyan:    '#8ABEB7'
-      white:   '#CFE3E0'
+# Colors
+import: 
+  - ~/.config/alacritty/darkpetrol.yml
 
-colors: *DarkPetrol
