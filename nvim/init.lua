@@ -4,7 +4,7 @@
 ----------------------------------
 
 -- Set <space> as leader key before load lazy packages
-vim.g.mapleader	= ' '
+vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Config folders
