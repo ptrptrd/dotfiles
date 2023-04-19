@@ -11,5 +11,8 @@ return {
 			strict = true,
 		}
 		require('nvim-tree').setup{}
+
+		-- Global keymap
+    vim.keymap.set('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', { desc = '[E]xplore'})  
 	end		
 }
