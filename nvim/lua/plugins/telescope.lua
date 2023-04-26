@@ -34,8 +34,8 @@ return {
 			}
 
 			-- Live Grep : grep word under cursor
-			local live_grep_args_shortcuts = require("telescope-live-grep-args.shortcuts")
-			vim.keymap.set("n", "<leader>gc", live_grep_args_shortcuts.grep_word_under_cursor)
+--			local live_grep_args_shortcuts = require("telescope-live-grep-args.shortcuts")
+--			vim.keymap.set("n", "<leader>gc", live_grep_args_shortcuts.grep_word_under_cursor)
 
 			-- See `:help telescope.builtin`
 			vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
@@ -50,7 +50,7 @@ return {
 
 			vim.keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, { desc = '[F]ind [F]iles' })
 			vim.keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags, { desc = '[F]ind [H]elp' })
-			vim.keymap.set('n', '<leader>fw', require('telescope.builtin').grep_string, { desc = '[F]Find current [W]ord' })
+			vim.keymap.set('n', '<leader>fw', require('telescope-live-grep-args.shortcuts').grep_word_under_cursor, { desc = '[F]Find current [W]ord' })
 			vim.keymap.set('n', '<leader>fg', '<cmd>lua require(\'telescope\').extensions.live_grep_args.live_grep_args()<cr>', { desc = '[F]ind by [G]rep' })
 			vim.keymap.set('n', '<leader>fd', require('telescope.builtin').diagnostics, { desc = '[F]ind [D]iagnostics' })
 		end

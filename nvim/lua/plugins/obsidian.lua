@@ -101,13 +101,13 @@ return {
   config = function(_, opts)
     require("obsidian").setup(opts)
 
-    -- Optional, override the 'gf' keymap to utilize Obsidian's search functionality.
+    -- Optional, override the 'of' keymap to utilize Obsidian's search functionality.
     -- see also: 'follow_url_func' config option above.
-    vim.keymap.set("n", "of", function()
+    vim.keymap.set("n", "fo", function()
       if require("obsidian").util.cursor_on_markdown_link() then
         return "<cmd>ObsidianFollowLink<CR>"
       else
-        return "of"
+        return "fo"
       end
     end, { noremap = false, expr = true, desc = '[O]bsidian [F]ollow Link'})
 	end,
